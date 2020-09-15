@@ -30,7 +30,7 @@ static String caminho = "grafo.txt";
             listas[i] = new LinkedList();
         }
     }
-
+    //Carrega o grafo
     public static void carregarGrafo(LinkedList listas[]) throws FileNotFoundException {
         ligarGrafo(listas);
         Scanner input = new Scanner(new FileReader(caminho));
