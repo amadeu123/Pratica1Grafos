@@ -13,7 +13,7 @@ public class Pratica1Grafos {
         int vertices = numeroVertices();
         LinkedList listas[] = new LinkedList[vertices];
         carregarGrafo(listas);
-        imprimirGrafo(listas,vertices);
+        imprimirGrafo(listas, vertices);
     }
 
     public static int numeroVertices() throws FileNotFoundException {
@@ -47,13 +47,13 @@ public class Pratica1Grafos {
             contador++;
         }
     }
-    
+
     //Imprime os vertices de saída e os de chegada
-    public static void imprimirGrafo(LinkedList[] listas,int numeroVertice) {
+    public static void imprimirGrafo(LinkedList[] listas, int numeroVertice) {
         for (int i = 0; i < numeroVertice; i++) {
             System.out.printf("%s: ", (listas[i].get(0)));
-            for (int j = 0; j < listas[i].size()-1; j++) {
-                System.out.print(listas[i].get(j+1) + " ");
+            for (int j = 0; j < listas[i].size() - 1; j++) {
+                System.out.print(listas[i].get(j + 1) + " ");
             }
             System.out.println();
         }
