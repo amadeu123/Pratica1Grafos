@@ -24,7 +24,7 @@ static String caminho = "grafo.txt";
         }
         return contador;
     }
-
+    //Liga o grafo
     public static void ligarGrafo(LinkedList[] listas) {
         for (int i = 0; i < listas.length; i++) {
             listas[i] = new LinkedList();
